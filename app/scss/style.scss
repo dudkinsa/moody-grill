@@ -1,0 +1,42 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+.header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 45px;
+    margin-bottom: 35px;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+  }
+
+  &__list-item + .menu__list-item {
+    padding-left: 20px;
+  }
+
+  &__list-item {
+    padding-left: 60px;
+    padding-right: 20px;
+    &:hover {
+        background-color: #e1b838;
+        color: #262626;
+      }
+  }
+  &__list-link {
+    color: #e1b838;
+    font-size: 33px;
+    &:hover {
+        background-color: #e1b838;
+        color: #262626;
+      }
+  }
+}

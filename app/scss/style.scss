@@ -11,6 +11,7 @@
     align-items: center;
     margin-top: 45px;
     margin-bottom: 35px;
+    gap: 50px;
   }
 }
 
@@ -18,25 +19,28 @@
   &__list {
     display: flex;
   }
-
-  &__list-item + .menu__list-item {
-    padding-left: 20px;
-  }
-
   &__list-item {
-    padding-left: 60px;
-    padding-right: 20px;
+    border-top: 3px solid #e1b838;
+    border-bottom: 3px solid #e1b838;
+    &:nth-child(1) {
+      border-left: 3px solid #e1b838;
+    }
+    &:nth-child(5) {
+      border-right: 3px solid #e1b838;
+    }
+
     &:hover {
-        background-color: #e1b838;
-        color: #262626;
-      }
+      background-color: #e1b838;
+    }
   }
   &__list-link {
+    display: block;
     color: #e1b838;
     font-size: 33px;
+    padding-right: 24px;
+    padding-left: 56px;
     &:hover {
-        background-color: #e1b838;
-        color: #262626;
-      }
+      color: #262626;
+    }
   }
 }
